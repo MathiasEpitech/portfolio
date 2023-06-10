@@ -1,0 +1,99 @@
+$primary-color : #ffff;
+
+@import 'animate.css';
+
+
+@font-face {
+    font-family:'Open Sans', sans-serif ;
+    src: url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap);
+}
+
+@font-face {
+    font-family:'Montserrat', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
+}
+
+@font-face {
+    font-family:'Lato', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap);
+}
+
+input,
+textarea{
+    font-family:'Open Sans' ;
+}
+
+.loader-active{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    animation: fadeOut 1s 1s;
+    animation-fill-mode: forwards;
+}
+
+.loader {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #fff;
+    border: 8px solid black;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .loader::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #3d3d3d ;
+    z-index: 5;
+    border-bottom: 8px solid black;
+    box-sizing: border-box;
+    animation: eyeShade 3s infinite;
+  }
+  .loader::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    width: 32px;
+    z-index: 2;
+    height: 32px;
+    background: #111;
+    border-radius: 50%;
+    animation: eyeMove 3s infinite;
+  }
+  @keyframes eyeShade {
+    0%   { transform: translateY(0)}
+    20%   { transform: translateY(5px)}
+    40%{ transform: translateY(-5px)}
+    50%   { transform: translateY(-5px)}
+    60%   { transform: translateY( -8px)}
+    75%   { transform: translateY( 5px)}
+    100%   { transform: translateY(10px)}
+  }
+  @keyframes eyeMove {
+    0%   { transform: translate(0 , 0)}
+    20%   { transform: translate(0px , 5px)}
+    40% { transform: translate(0px , -5px)}
+    50%   { transform: translate(0px , -5px)}
+    60%   { transform: translate(-10px , -5px)}
+    75%   { transform: translate(-20px , 5px)}
+    100%   { transform: translate(0 , 10px)}
+  }

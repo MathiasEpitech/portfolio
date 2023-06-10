@@ -1,0 +1,127 @@
+.container.contact-page {
+    padding: 180px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+    @media (max-width: 768px) {
+      padding: 80px 0;
+    }
+  
+    .text-zone {
+      h1 {
+        font-size: 45px;
+        font-weight: 700;
+      }
+  
+      p {
+        color: #b8b8b8;
+        font-size: 18px;
+        letter-spacing: 0.8px;
+        line-height: 1.5em;
+        margin: 14px auto 30px auto;
+        width: 56%;
+  
+        @media (max-width: 768px) {
+          width: 90%;
+        }
+      }
+  
+      .contact-form {
+        width: 100%;
+        margin-top: 20px;
+  
+        ul {
+          padding: 0;
+          margin: 0;
+  
+          li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            opacity: 0;
+            overflow: hidden;
+            display: block;
+            clear: both;
+            position: relative;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+  
+            @media (max-width: 768px) {
+              animation: fadeInUp 2s;
+            }
+          }
+  
+          li.half {
+            width: 100%;
+            margin-left: 0;
+            float: none;
+            clear: both;
+          }
+        }
+  
+        input[type='text'],
+        input[type='email'] {
+          width: 100%;
+          border: 0;
+          background: rgba(94, 94, 94, 0.527);
+          height: 50px;
+          font-size: 16px;
+          color: #fff;
+          padding: 0 20px;
+          box-sizing: border-box;
+        }
+  
+        textarea {
+          width: 100%;
+          border: 0;
+          background: rgba(94, 94, 94, 0.527);
+          font-size: 16px;
+          color: #fff;
+          padding: 20px;
+          box-sizing: border-box;
+          min-height: 150px;
+        }
+  
+        .button-center {
+          display: flex;
+          justify-content: center;
+        }
+  
+        .flat-button {
+          color: white;
+          font-size: 16px;
+          letter-spacing: 3px;
+          text-decoration: none;
+          padding: 10px 10px;
+          border: 1px solid white;
+          float: left;
+          border-radius: 4px;
+          background: 0 0;
+          align-items: center;
+          text-align: center;
+          margin-right: 10px;
+  
+          &:hover {
+            background: white;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
