@@ -43,7 +43,7 @@ const ProjectCards = () => {
   return (
     <>
       {projects.map((project, index) => (
-        <Col key={index} xs={12} sm={6} md={4}>
+        <Col key={index} xs={12} sm={6} md={4} lg={3} xl={3}>
           <div className="proj-imgbx">
             <img src={project.imgUrl} alt="Project" />
             <div className="proj-txtx">
