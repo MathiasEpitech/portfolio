@@ -1,0 +1,119 @@
+/************ Projects Css ************/
+.project {
+    padding: 180px 0;
+    position: relative;
+    // background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+  
+.project h2 {
+font-size: 45px;
+font-weight: 700;
+}
+  
+.project p {
+color: #B8B8B8;
+font-size: 18px;
+letter-spacing: 0.8px;
+line-height: 1.5em;
+margin: 14px auto 30px auto;
+width: 56%;
+}
+
+.project .nav.nav-pills {
+width: 72%;
+margin: 0 auto;
+border-radius: 50px;
+background-color: rgb(255 255 255 / 10%);
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.project .nav.nav-pills .nav-item {
+width: 33.33333%;
+}
+  
+.project .nav.nav-pills .nav-link {
+background-color: white;
+border-radius: 0;
+padding: 17px 0;
+color: black;
+width: 100%;
+font-size: 20px;
+letter-spacing: 0.8px;
+font-weight: bold;
+position: relative;
+transition: 0.3s ease-in-out;
+text-align: center;
+z-index: 0;
+}
+  
+.project .nav.nav-pills .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90.21deg, #d3d3d3 -5.91%, #000000 111.58%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+  
+.project .nav.nav-pills .nav-link.active::before {
+    width: 100% !important;
+}
+  
+.project .nav.nav-pills .nav-link.active {
+    border: 1px solid rgb(0, 0, 0);
+}
+  
+.nav-link#projects-tabs-tab-first {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 55px 0px 0px 55px;
+}
+  
+.nav-link#projects-tabs-tab-second {
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+  
+.nav-link#projects-tabs-tab-third {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0 55px 55px 0;
+}
+  /************ Projects Css ************/
+
+// .footer {
+//     z-index: 1;
+//     --footer-background:#ED5565;
+//     display: grid;
+//     position: relative;
+//     grid-area: footer;
+//     min-height: 12rem;
+// }
+
+// .bubbles {
+//     position: absolute;
+//     top: 0;
+//     left:0;
+//     right:0;
+//     height: 1rem;
+//     background-color: var(--footer-background);
+//     filter: url("#blob");
+// }
+// .bubble{
+//     position: absolute;
+//     left: var(--position, 50%);
+//     background: var(--footer-background);
+//     border-radius: 100%;
+//     animation: bubble-size
+//         var(--time, 4s) ease-in infinite
+//         var(--delay,);
+// }
+  

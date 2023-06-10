@@ -1,0 +1,59 @@
+.Error {
+  text-align: center;
+}
+
+.Error-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.Error-Randy{
+  height: 50vmin;
+  pointer-events: none;
+}
+
+.Error-Randy2{
+  height: 55vmin;
+  pointer-events: none;
+}
+
+.Error-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Error-logo {
+    animation: Error-logo-spin infinite 30s linear;
+  }
+}
+
+.Error-header {
+  background-image: url('tegrydy.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Error-link {
+  color: #61dafb;
+}
+
+@keyframes Error-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

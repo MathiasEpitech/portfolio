@@ -1,0 +1,83 @@
+.nav-bar {
+  background: whitesmoke;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  opacity: 0;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+.nav-bar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar .logo img {
+  width: 80px;
+  height: auto;
+}
+
+.nav-bar nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-bar a {
+  font-size: 23px;
+  color: black;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 90px;
+  height: 90px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  margin-right: 40px;
+}
+
+.nav-bar a:hover {
+  color: dimgray;
+}
+
+.nav-bar a:hover svg {
+  opacity: 0;
+}
+
+.nav-bar a:hover::after {
+  opacity: 1;
+}
+
+.nav-bar a::after {
+  content: attr(data-text);
+  font-size: 15px;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.nav-bar a.active svg {
+  color: black;
+}
+
+.nav-bar .navbar-nav {
+  margin-left: 0;
+}
+
+.nav-bar .navbar-nav .nav-item {
+  margin-left: 10px;
+}
