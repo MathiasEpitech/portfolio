@@ -1,5 +1,5 @@
 .contact-page {
-  padding-top: 350px;
+  padding-top: 550px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -20,6 +20,21 @@
 
     span {
       display: inline-block;
+    }
+  }
+
+  p {
+    padding-top: 20px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px auto 30px auto;
+    width: 56%;
+    text-align: left;
+  
+    @media (max-width: 768px) {
+      width: 90%;
     }
   }
 
