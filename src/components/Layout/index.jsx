@@ -5,6 +5,7 @@ import About from '../About';
 import Loader from 'react-loaders';
 import Projects from '../Projects';
 import Contact from '../Contact';
+import Footer from '../Footer';
 
 const Layout = () => {
   return (
@@ -21,7 +22,7 @@ const Layout = () => {
 
         <span className="tags bottom-tags">&lt;/body&gt;</span>
         <br />
-        <span className="bottom-tag-html">&lt;/html&gt;</span>
+        <Footer/>
       </div>
     </div>
     <Loader/>
