@@ -2,7 +2,6 @@ import "./index.scss";
 import LogoM from "../../../assets/images/logo-black.png";
 import { useEffect, useRef } from "react";
 import gsap from "gsap-trial";
-import Mlogo from "./Mlogo";
 
 const Logo = () => {
   const bgRef = useRef();
@@ -36,7 +35,6 @@ const Logo = () => {
   return (
     <div className="logo-container" ref={bgRef}>
       <img ref={solidLogoRef} className="solid-logo" src={LogoM} alt="M" />
-      <Mlogo outlineLogoRef={outlineLogoRef} />
     </div>
   );
 };

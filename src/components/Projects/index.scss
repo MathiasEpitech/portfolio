@@ -1,118 +1,124 @@
-/************ Projects Css ************/
+/************ Projects CSS ************/
 .project {
-  padding: 180px 0;
   position: relative;
-  // background-color: black;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  text-align: center; 
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+}
+.project h1{
+  color: white;
+  font-size: 53px;
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+
+  span {
+    display: inline-block;
+  }
 }
 
-.project h2 {
-font-size: 45px;
-font-weight: 700;
-}
+// .project p {
+//   color: white;
+//   margin-bottom: 20px;
+//   font-size: 18px;
+//   font-family: sans-serif;
+//   line-height: 1.5;
+//   text-align: left;
+
+//   @media (max-width: 768px) {
+//     text-align: center;
+//   }
+// }
 
 .project p {
-color: #B8B8B8;
-font-size: 18px;
-letter-spacing: 0.8px;
-line-height: 1.5em;
-margin: 14px auto 30px auto;
-width: 56%;
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  width: 56%;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 }
 
-.project .nav.nav-pills {
-width: 72%;
-margin: 0 auto;
-border-radius: 50px;
-background-color: rgb(255 255 255 / 10%);
-overflow: hidden;
-display: flex;
-justify-content: center;
-align-items: center;
+.project .nav-pills {
+  width: 62%;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 }
 
-.project .nav.nav-pills .nav-item {
-width: 33.33333%;
+.project .nav-pills button {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 10px 0;
+  color: white;
+  width: 33.33333%;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+  border: none;
+  cursor: pointer;
 }
 
-.project .nav.nav-pills .nav-link {
-background-color: white;
-border-radius: 0;
-padding: 17px 0;
-color: black;
-width: 100%;
-font-size: 20px;
-letter-spacing: 0.8px;
-font-weight: bold;
-position: relative;
-transition: 0.3s ease-in-out;
-text-align: center;
-z-index: 0;
-}
-
-.project .nav.nav-pills .nav-link::before {
+.project .nav-pills button::before {
   content: "";
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, #d3d3d3 -5.91%, #000000 111.58%);
+  background: linear-gradient(180.21deg, #d3d3d3 -5.91%, #2e2e2e 111.58%);  
   top: 0;
   left: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
 
-.project .nav.nav-pills .nav-link.active::before {
-  width: 100% ;
+.project .nav-pills button.active::before {
+  width: 100% !important;
 }
 
-.project .nav.nav-pills .nav-link.active {
+.project .nav-pills button.active {
   border: 1px solid rgb(0, 0, 0);
 }
 
-.nav-link#projects-tabs-tab-first {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+.project .nav-pills button:first-child {
   border-radius: 55px 0px 0px 55px;
 }
 
-.nav-link#projects-tabs-tab-second {
+.project .nav-pills button:nth-child(2) {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.nav-link#projects-tabs-tab-third {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+.project .nav-pills button:last-child {
   border-radius: 0 55px 55px 0;
 }
-/************ Projects Css ************/
 
-// .footer {
-//     z-index: 1;
-//     --footer-background:#ED5565;
-//     display: grid;
-//     position: relative;
-//     grid-area: footer;
-//     min-height: 12rem;
-// }
-
-// .bubbles {
-//     position: absolute;
-//     top: 0;
-//     left:0;
-//     right:0;
-//     height: 1rem;
-//     background-color: var(--footer-background);
-//     filter: url("#blob");
-// }
-// .bubble{
-//     position: absolute;
-//     left: var(--position, 50%);
-//     background: var(--footer-background);
-//     border-radius: 100%;
-//     animation: bubble-size
-//         var(--time, 4s) ease-in infinite
-//         var(--delay,);
-// }
+@media (max-width: 768px) {
+  .project .nav-pills button {
+    width: 100%;
+  }
+}
+/************ Projects CSS ************/

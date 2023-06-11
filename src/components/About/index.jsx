@@ -3,9 +3,10 @@ import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3, faHtml5, faJsSquare, faPhp, faReact, faSymfony } from '@fortawesome/free-brands-svg-icons';
-import Loader from 'react-loaders';
+import CV from '../../assets/CV/CV_Mathias_Fernandes.pdf';
 
 const About = () => {
+
   const [letterClass, setLetterClass] = useState('text-animate');
 
   useEffect(() => {
@@ -19,10 +20,10 @@ const About = () => {
 
   return (
     <>
-      <div className="container about-page">
+      <div className="container about-page" id='about-page'>
         <div className="text-zone">
           <h1>
-            <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={15} />
+            <AnimatedLetters letterClass={letterClass} strArray={['À',' ', 'P', 'r', 'o', 'p', 'o', 's',' ', 'D', 'e', ' ', 'M', 'o', 'i']} idx={45} />
           </h1>
           <p>
             I'm a very ambitious front-end developer looking for a role in an established IT company with the opportunity
@@ -36,6 +37,13 @@ const About = () => {
             If I need to define myself in one sentence that would be a family person, father of a beautiful daughter, a
             sports fanatic, photography enthusiast, and tech-obsessed!!!
           </p>
+
+          <div className='d-flex justify-content-center'>
+            <a href={CV} className="flat-button" download>
+              TÉLÉCHARGER MON CV
+            </a>
+          </div>
+
         </div>
 
         <div className="stage-cube-cont">
@@ -66,7 +74,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Loader type="ball-rotate" />
     </>
   );
 };

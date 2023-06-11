@@ -1,14 +1,16 @@
 import './index.scss';
-import NavBarTest from '../NavarTest';
+import NavBar from '../Navar';
 import Home from '../Home';
 import About from '../About';
+import Loader from 'react-loaders';
 import Projects from '../Projects';
 import Contact from '../Contact';
 
 const Layout = () => {
   return (
+    <>
     <div className="App">
-      <NavBarTest />
+      <NavBar />
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>
 
@@ -22,6 +24,8 @@ const Layout = () => {
         <span className="bottom-tag-html">&lt;/html&gt;</span>
       </div>
     </div>
+    <Loader/>
+    </>
   );
 };
 

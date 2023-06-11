@@ -3,11 +3,8 @@ body {
   }
   
   .page {
-    width: 100%;
     min-height: 100vh; /* Ajout d'une hauteur minimale */
     position: relative;
-    // overflow-y: auto;
-    // // scroll-behavior: smooth;
   }
   
   .top-tags {
@@ -40,7 +37,6 @@ body {
     width: 100%;
     will-change: contents;
     height: auto;
-    min-width: 566px;
     position: static;
     opacity: 1;
     top: 0;

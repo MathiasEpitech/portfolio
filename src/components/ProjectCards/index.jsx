@@ -11,31 +11,37 @@ const projects = [
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg1,
+    url:"",
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg2,
+    url:"",
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg3,
+    url:"",
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg1,
+    url:"",
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg2,
+    url:"",
   },
   {
     title: "Business Startup",
     description: "Design & Development",
     imgUrl: projImg3,
+    url:"",
   },
   // Ajoutez d'autres objets de projet si nécessaire
 ];
@@ -57,6 +63,11 @@ const ProjectCards = () => {
                 <div className="proj-txtx">
                   <h4>{project.title}</h4>
                   <span>{project.description}</span>
+                  <div className='d-flex justify-content-center'>
+                    <a href={project.url} className="flat-button" download>
+                      GITHUB
+                    </a>
+                  </div>
                 </div>
               </div>
             </Col>
